@@ -1,0 +1,16 @@
+.nav-style {
+  border: 1px solid #334155;
+  margin: 20px 0px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e293b;
+}
+.hea h2 {
+  margin: 5px;
+}
+.nav-style h4 {
+  text-align: center;
+  color: #607086;
+}

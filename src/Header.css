@@ -1,0 +1,33 @@
+.hea {
+  background-color: #4338ca;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  padding: 10px 0;
+  font-weight: 600;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.282);
+  position: relative;
+  justify-content: center;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #6366f1;
+}
+h4 {
+  display: flex;
+  margin: 5px;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  justify-content: center;
+}
+.hea div img {
+  cursor: pointer;
+}
+.img-class {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
