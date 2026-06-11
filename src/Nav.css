@@ -1,16 +1,37 @@
 .nav-style {
   border: 1px solid #334155;
-  margin: 20px 0px;
+  margin: 20px 0;
   border-radius: 12px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   background-color: #1e293b;
+  width: 100%;
+  max-width: 220px;
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
 }
-.hea h2 {
-  margin: 5px;
-}
+
 .nav-style h4 {
   text-align: center;
   color: #607086;
+  margin: 0 0 8px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-style {
+    max-width: 100%;
+    position: static;
+    margin: 0 0 16px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px;
+  }
+
+  .nav-style h4 {
+    width: 100%;
+  }
 }

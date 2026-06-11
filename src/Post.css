@@ -1,6 +1,5 @@
 .post-style {
-  width: 600px;
-  margin: 20px 0px;
+  margin: 20px 0;
   text-align: center;
   background-color: #1e293b;
   border: 1px solid #334155;
@@ -8,13 +7,25 @@
   border-radius: 12px;
   padding: 24px;
   line-height: 30px;
+  width: 100%;
 }
+
 .post-style h3 {
   border-bottom: 1px solid #334155;
-  margin-top: 0;
+  margin: 0 10px 10px 10px;
   padding-bottom: 15px;
-  margin: 0px 10px 10px 10px;
   color: rgb(220, 220, 220);
   font-size: 30px;
   line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .post-style {
+    padding: 16px;
+  }
+
+  .post-style h3 {
+    font-size: 22px;
+    line-height: 36px;
+  }
 }

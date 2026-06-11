@@ -14,8 +14,9 @@ const informations = [
   { id: 8, img: Img, fullName: "Matthew T." },
 ];
 
-function message() {
-  alert("I'm working on it");
+function toggleFriends() {
+  const list = document.querySelector("#friends-list");
+  list.style.display = list.style.display === "none" ? "block" : "none";
 }
 
 export default function Users() {
@@ -31,10 +32,10 @@ export default function Users() {
       <div className="Title">
         <h1>Friends</h1>
         <div className="btn">
-          <button onClick={message}>+</button>
+          <button onClick={toggleFriends}>+</button>
         </div>
       </div>
-      {informationslist}
+      <div id="friends-list">{informationslist}</div>
     </div>
   );
 }

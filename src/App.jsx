@@ -23,6 +23,18 @@ const texts = [
     paragraph:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, explicabo aut eaque architecto sit corporis at omnis recusandae obcaecati porro impedit fuga ipsam labore cumque praesentium tempora aperiam animi nobis!",
   },
+  {
+    id: 4,
+    postTitle: "Post 4",
+    paragraph:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, explicabo aut eaque architecto sit corporis at omnis recusandae obcaecati porro impedit fuga ipsam labore cumque praesentium tempora aperiam animi nobis!",
+  },
+  {
+    id: 5,
+    postTitle: "Post 5",
+    paragraph:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, explicabo aut eaque architecto sit corporis at omnis recusandae obcaecati porro impedit fuga ipsam labore cumque praesentium tempora aperiam animi nobis!",
+  },
 ];
 
 function App() {
@@ -32,7 +44,7 @@ function App() {
         key={info.id}
         paragraph={info.paragraph}
         postTitle={info.postTitle}
-      ></Post>
+      />
     );
   });
   return (
@@ -40,10 +52,11 @@ function App() {
       <Header />
       <div className="app-container">
         <Users />
-        <div>{textslist}</div>
+        <div className="posts-column">{textslist}</div>
         <Nav />
       </div>
     </>
   );
 }
+
 export default App;
